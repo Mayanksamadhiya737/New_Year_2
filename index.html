@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>MeAndYou</title>
+    <link rel="icon" href="images/love.png">
+    <script>
+      function openUp() {
+        const $opentop = document.querySelector("#opentop");
+        const $top = document.querySelector("#top");
+        const $front = document.querySelector("#front");
+        const $back = document.querySelector("#back");
+        const $letter = document.querySelector("#letter");
+        const $button = document.querySelector("button");
+
+        $opentop.beginElement();
+        $top.style.zIndex = 2;
+
+        $top.classList.add("animate");
+        $front.classList.add("animate");
+        $back.classList.add("animate");
+        $button.classList.add("animate");
+        $letter.classList.add("animate");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="text">
+      <h1>Hey ! Listen this is for you 💖....</h1>
+    </div>
+    <div id="envelope">
+      <div id="back">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="300"
+          width="300"
+        >
+          <polygon
+            points="0,100 300,100 300,300 0,300"
+            style="fill: #4a274a; stroke: none; stroke-width: 0"
+          />
+        </svg>
+      </div>
+      <div id="front">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="300"
+          width="300"
+        >
+          <polygon
+            points="0,100 150,200 300,100 300,300 0,300"
+            style="fill: #2abad0; stroke: #ffffff; stroke-width: 3"
+          />
+        </svg>
+      </div>
+      <div id="top">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="300"
+          width="300"
+        >
+          <polygon
+            points="0,100 150,200 300,100"
+            style="fill: #2abad0; stroke: #ffffff; stroke-width: 2"
+          >
+            <animate
+              id="opentop"
+              attributeName="points"
+              dur="0.5s"
+              fill="freeze"
+              begin="indefinite"
+              from="0,100 150,200 300,100"
+              to="0,100 150,0 300,100"
+            />
+          </polygon>
+        </svg>
+      </div>
+
+      <div id="letter">
+        <h1>For My <span>Akku💓</span></h1>
+
+        <!-- <img src="https://i.postimg.cc/5yZQnDpb/ukraine-7424066-640.webp" />-->
+        <p>
+          I know, Aaj mujhe aapke saath hona chahiye tha aur saath me New Year
+          celebrate krna chahiye tha. Sorry baccha me waha aakar aapko surprise
+          nahi de paya but Trust me Jab se aap gye ho naaaa <strong>I MISS YOU SO MUCH</strong> <br />
+
+          <br />
+          I miss you.. I miss your touch.. I miss your voice.. I miss your lips.. 
+          I miss your smile.. I miss your laugh.. I miss how you would hold me.. 
+          I miss how you would make me laugh.. I miss when we laughed together.. 
+          I miss seeing you everyday.. <br />
+
+          <br />
+          How I miss being able to have you in front of me.. I just want to be able to hold you again coz, 
+          I miss you so much and I believe this is affecting me most Coz this texting Isn't enough.. <br />
+
+          <br />
+          These once in a while long calls just ain't enough no more. I wanna be able to have you beside me holding me 
+          and cuddling and feeling every inch of each other's body and able to talk for hours.. <br />
+
+          <br />
+          God knows what he is doing and I'm not supposed to question him but I just feel so tired and 
+          I just want to have you with me to feel better. Just come to me even if it is for a few minutes, 
+          I want to enjoy each and every moment together..
+
+          <br />
+          Let's recap our moments
+          <a href="#" target="_blank">Memories</a>
+        </p>
+      </div>
+      <button onclick="openUp()">Click Here</button>
+    </div>
+
+    <div class="button-container">
+        <a href="https://www.instagram.com/_douceur_19" class="button">@YouAndMe</a>
+    </div>
+  </body>
+</html>
